@@ -22,7 +22,7 @@ export default function Home() {
           <div className='h-[90%] flex w-full justify-between sm:justify-center items-center'>
             <Image src={divinity} alt='divinity' className='h-[65%] sm:h-full object-fill w-[19%] sm:w-[15%] p-0 sm:px-2' />
             <Image src={synchronicity} alt='synchronicity' className='h-[65%] sm:h-full object-fill w-[19%] sm:w-[15%] p-0 sm:px-2' />
-            <div className='h-[65%] sm:h-full font-sans text-gray-600 text-[10px] sm:text-3xl p-0 sm:px-3 flex flex-col items-center justify-center mt-2 sm:mt-0 w-[19%] sm:w-[25%] overflow-hidden'>
+            <div className='h-[65%] sm:h-full font-sans text-gray-600 text-[10px] sm:text-3xl p-0 sm:px-3 flex flex-col items-center justify-center mt-2 sm:mt-0 w-[19%] sm:w-[25%]'>
               <div className='block'>Your
                 <span className='text-pink-500'> Album</span> And
                 <span className='text-pink-500'> Artist</span> Name
