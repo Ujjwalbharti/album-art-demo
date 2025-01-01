@@ -27,7 +27,7 @@ export default function CartInfo() {
         return (
             <div className='h-[93%] flex flex-col items-start justify-start w-full font-sans'>
                 <span className='block font-bold text-xl text-gray-500 m-5'>Cart is empty...</span>
-                <div className="h-[32%] flex justify-center items-center">
+                <div className="w-full h-[32%] flex justify-center items-center">
                     <div className='border-t border-b border-black h-[85%] w-full sm:w-[95%] flex justify-center items-center'>
                         <div className='h-[90%] flex w-full justify-between sm:justify-center items-center'>
                             <Image src={divinity} alt='divinity' className='h-[65%] sm:h-full object-fill w-[19%] sm:w-[15%] p-0 sm:px-2' />
