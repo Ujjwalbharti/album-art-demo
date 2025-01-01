@@ -13,7 +13,7 @@ const CheckoutForm = () => {
   };
 
   return (
-    <form action="/" method="POST" onSubmit={handleSubmit}>
+    <form action="/" method="" onSubmit={handleSubmit}>
       <button 
         type="submit" 
         className='block bg-gray-700 text-white text-sm sm:text-xl p-2 sm:p-3 rounded-lg'>
