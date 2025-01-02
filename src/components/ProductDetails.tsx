@@ -14,9 +14,9 @@ const ProductDetails: React.FC<ProductProps> = ({ product }) => {
                 <Image
                     src={`/images/albums/${product.imageName}`}
                     alt={product.title}
-                    className='object-contain'
-                    width={325}
-                    height={325}
+                    className='object-contain sm:w-[325px] sm:h-[325px]'
+                    width={300}
+                    height={300}
                 />
             </Link>
             <span className='block font-serif text-gray-700 text-xl'>{product.title}</span>
