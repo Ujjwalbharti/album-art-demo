@@ -25,7 +25,7 @@ const ProductInfo: React.FC<ProductInfoProps> = ({ product }) => {
 
     return (
         <div className="h-full">
-            <SiteHeader />
+            <SiteHeader pathName=""/>
             <div className="sm:flex sm:flex-row flex-col w-full">
                 <div className="flex flex-col sm:w-[65%] justify-center items-center">
                     <div className="sm:flex sm:flex-row flex-col w-full m-5">

@@ -13,7 +13,7 @@ import SiteHeader from '@/components/SiteHeader';
 export default function Home() {
   return (
     <div className="h-full">
-      <SiteHeader />
+      <SiteHeader pathName='/'/>
       <div className="h-[28%]">
         <Image src={heroImage} alt='hero-image' className='object-fill h-full' />
       </div>

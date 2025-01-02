@@ -73,7 +73,7 @@ export default function CartInfo() {
     const cartInfo = useShoppingCart();
     return (
         <div className="h-full bg-gray-50">
-            <SiteHeader />
+            <SiteHeader pathName='/cart'/>
             <div className='h-[93%] flex flex-col sm:flex-row sm:justify-between'>
                 {getCartData()}
                 {getSummary()}
