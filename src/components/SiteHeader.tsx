@@ -8,16 +8,16 @@ import React from "react";
 
 
 interface SiteHeaderProps {
-    pathName : string
+    pathName: string
 }
 
 
-const SiteHeader : React.FC<SiteHeaderProps> = ({pathName}) => {
+const SiteHeader: React.FC<SiteHeaderProps> = ({ pathName }) => {
     const shoppingCartData = useShoppingCart();
     const isActive = (path: string) => pathName === path;
 
     return (
-        <div className="bg-white h-[7%] border-b border-b-gray-500">
+        <div className="bg-white h-[7%] border-b border-b-gray-500 fixed top-0 w-full">
             <div className='h-full px-2 py-1 flex font-sans text-gray-600 text-xl items-center'>
                 <Image src={logo} alt='logo' className='object-center h-full w-[20%] sm:w-[10%]' />
                 <Link href="/">
