@@ -16,17 +16,17 @@ const CheckoutProductInfo: React.FC<CheckoutProps> = ({ productInfo }) => {
                 <Image
                     src={`/images/albums/${product?.imageName}`}
                     alt={product?.title || ""}
-                    className='object-contain w-[50%] sm:w-[30%] lg:w-[10%] p-2'
-                    width={100}
-                    height={100}
+                    className='object-contain m-2'
+                    width={150}
+                    height={150}
                 />
             </Link>
-            <div className="flex flex-col justify-center sm:w-[50%] p-3 text-lg font-sans">
+            <div className="flex flex-col justify-center sm:w-[45%] p-2 text-lg font-sans">
                 <span className="block text-gray-600 font-bold">{product?.title}</span>
                 <span className="block font-extrabold">{`$${product?.price}`}</span>
                 <span className="block text-gray-500">{product?.description}</span>
             </div>
-            <div className="flex sm:w-[40%] p-3 items-center justify-center text-white font-extrabold text-xl font-mono">
+            <div className="flex sm:w-[30%] p-2 items-center justify-center text-white font-extrabold text-xl font-mono">
                 <BuyButton product={product as Product} />
             </div>
         </div>
