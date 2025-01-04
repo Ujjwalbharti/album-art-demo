@@ -9,7 +9,7 @@ export default function Catalog() {
         <div className="relative h-full">
             <SiteHeader pathName='/catalog'/>
             <div className='h-[7%]'></div>
-            <div className='h-[93% flex flex-wrap justify-start bg-gray-50'>
+            <div className='h-[93% flex flex-wrap justify-center sm:justify-start bg-gray-50'>
                 {ProductUtils.getAllProducts().map((product: Product, index: number) => (
                     <ProductDetails key={index} product={product} />
                 ))}

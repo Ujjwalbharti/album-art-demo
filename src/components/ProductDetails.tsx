@@ -9,7 +9,7 @@ interface ProductProps {
 
 const ProductDetails: React.FC<ProductProps> = ({ product }) => {
     return (
-        <div className='my-4 ml-4 flex flex-col items-center'>
+        <div className='my-4 sm:ml-4 flex flex-col items-center'>
             <Link href={`/catalog/product-info/${product._id}`}>
                 <Image
                     src={`/images/albums/${product.imageName}`}
