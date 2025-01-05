@@ -12,7 +12,7 @@ interface CheckoutProps {
 const CheckoutProductInfo: React.FC<CheckoutProps> = ({ productInfo }) => {
     const product = ProductUtils.getProductById(productInfo.id)
     return (
-        <div className="flex flex-col sm:flex-row items-start sm:items-center border border-gray-700 m-1 sm:m-3 w-[98%] sm:w-full">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center m-1 sm:m-3 w-[98%] sm:w-full">
             <div className="flex justify-start gap-3 sm:gap-5 w-full sm:w-[80%]">
                 <Link href={`/catalog/product-info/${product?._id}`} className="block m-2 w-[80px] h-[80px] sm:w-[120px] sm:h-[100px] md:w-[150px] md:h-[120px] lg:w-[150px] lg:h-[150px]">
                     <Image
