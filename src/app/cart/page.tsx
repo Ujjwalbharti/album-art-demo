@@ -18,7 +18,7 @@ import CheckoutForm from '@/components/CheckoutForm';
 export default function CartInfo() {
     function getCartData() {
         if (cartInfo.cart.length > 0) {
-            return (<div className='sm:w-[65%] overflow-y-auto'>
+            return (<div className='sm:w-[65%] sm:overflow-y-auto'>
                 {cartInfo.cart.map((product: ProductCheckoutInfo, index: number) => (
                     <CheckoutProductInfo productInfo={product} key={index} />
                 ))}
