@@ -34,7 +34,7 @@ const BuyButton: React.FC<ProductProps> = ({ product }) => {
     }
 
     return (
-        <div className='text-white bg-blue-500 hover:bg-blue-600 border rounded-lg font-sans font-extrabold'>
+        <div className='text-white bg-blue-500 hover:bg-blue-600 border rounded-lg font-sans font-extrabold text-sm'>
             {getDisplayPurchaseButton()}
         </div>
     );
