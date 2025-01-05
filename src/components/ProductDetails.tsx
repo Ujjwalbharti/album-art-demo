@@ -9,7 +9,7 @@ interface ProductProps {
 
 const ProductDetails: React.FC<ProductProps> = ({ product }) => {
     return (
-        <div className='my-4 flex flex-col items-center w-[125px] sm:w-[200px] md:w-[225px] lg:w-[325px]'>
+        <div className='my-4 flex flex-col items-center w-[110px] sm:w-[200px] md:w-[225px] lg:w-[325px]'>
             <Link href={`/catalog/product-info/${product._id}`}>
                 <Image
                     src={`/images/albums/${product.imageName}`}
@@ -19,7 +19,7 @@ const ProductDetails: React.FC<ProductProps> = ({ product }) => {
                     height={300}
                 />
             </Link>
-            <span className='block font-serif text-gray-700 text-sm sm:text-xl'>{product.title}</span>
+            <span className='block font-serif text-gray-700 text-sm sm:text-xl mb-[6px] sm:mb-0 h-[30px] text-center'>{product.title}</span>
             <span className='block font-mono font-bold'>${product.price}</span>
             <BuyButton product={product}/>
         </div>
