@@ -61,7 +61,7 @@ export default function CartInfo() {
             })
             totalCost = parseFloat(totalCost.toFixed(2));
             return (
-                <div className='flex flex-col items-center justify-center sm:h-[60%] w-[98%] sm:w-[30%] font-sans border border-gray-300 bg-gray-100 m-1 sm:m-0 p-2'>
+                <div className='flex flex-col items-center justify-center sm:fixed sm:right-0 w-[98%] sm:w-[30%] font-sans bg-gray-100 m-1 sm:m-0 p-2 sm:h-full'>
                     <span className='block text-gray-500 font-extrabold text-xl mb:3 sm:mb-5'>Checkout Summary</span>
                     <span className='block text-black font-extrabold text:sm text-xl mb-3 sm:mb-5'>Total Price : ${totalCost}</span>
                     <CheckoutForm />
@@ -72,7 +72,7 @@ export default function CartInfo() {
     }
     const cartInfo = useShoppingCart();
     return (
-        <div className="relative h-full bg-gray-50">
+        <div className="relative h-full">
             <SiteHeader pathName='/cart'/>
             <div className='h-[7%]'></div>
             <div className='h-[93%] flex flex-col sm:flex-row sm:justify-between'>
