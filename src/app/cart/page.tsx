@@ -61,7 +61,7 @@ export default function CartInfo() {
             })
             totalCost = parseFloat(totalCost.toFixed(2));
             return (
-                <div className='flex flex-col items-center justify-center sm:fixed sm:right-0 w-[98%] sm:w-[30%] font-sans bg-gray-100 m-1 sm:m-0 p-2 sm:h-full'>
+                <div className='flex flex-col items-center justify-center sticky bottom-0 sm:fixed sm:right-0 w-[98%] sm:w-[30%] font-sans bg-gray-100 m-1 sm:m-0 p-2 sm:h-full'>
                     <span className='block text-gray-500 font-extrabold text-xl mb:3 sm:mb-5'>Checkout Summary</span>
                     <span className='block text-black font-extrabold text:sm text-xl mb-3 sm:mb-5'>Total Price : ${totalCost}</span>
                     <CheckoutForm />
